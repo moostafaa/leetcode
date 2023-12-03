@@ -32,7 +32,7 @@ Each solution includes a brief explanation of the approach taken and thoughts be
 To clone this repository to your local machine, run the following command in your terminal:
 
 ```bash
-git clone https://github.com/<your-username>/leetcode-solutions.git
+git clone https://github.com/moostafaa/leetcode-solutions.git
 
 Navigate to the cloned directory to explore the solutions.
 
@@ -48,9 +48,9 @@ Commit your changes (git commit -m 'Add some AmazingFeature').
 Push to the branch (git push origin feature/AmazingFeature).
 Open a Pull Request.
 Contact
-GitHub: @your-username
+GitHub: @moostafaa
 Twitter: @your-twitter
 License
 This project is licensed under the MIT License.
 
-Make sure you replace `<your-username>`, `<Problem_Area>`, `<Difficulty>`, `<Problem_Title>`, and other placeholders with the actual content that applies to your repository. If your solutions are not categorized by problem area or difficulty, you may need to adjust the repository structure portion accordingly. Also, ensure you have `LICENSE` file in your repository if you reference it in the README.
+
