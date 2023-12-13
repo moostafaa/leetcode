@@ -29,3 +29,30 @@ public class Solution
 		return trappedWater;
 	}
 }
+
+//solve using monotonic stack
+public class Solution
+{
+	public int Trap(int[] height)
+	{
+		int totalWater = 0;
+		var stack = new Stack<int>();
+
+		for (int i = 0; i < height.Length; i++)
+		{
+			while (stack.Count > 0 && height[i] > height[stack.Peek()])
+			{
+				int top = stack.Pop();
+				if (stack.Count == 0) break;
+
+				int distance = i - stack.Peek() - 1;
+				int bounded_height = Math.Min(height[i], height[stack.Peek()]) - height[top];
+				totalWater += distance * bounded_height;
+			}
+
+			stack.Push(i); 
+		}
+
+		return totalWater;
+	}
+}
